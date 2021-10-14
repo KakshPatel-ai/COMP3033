@@ -24,7 +24,7 @@ router.get('/', (req, res, next) => {
         total = x*y;
     }
     else{
-        res.status(404).send('No suitable methods found');
+        res.status(404).send('Error: No suitable methods found');
     }
     res.json({
         "x" : x, 
